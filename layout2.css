@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#parent-div{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.clearfix::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+
+#logo-div{
+    background-color: lightgray;
+    width: 40%;
+    min-height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+}
+#navigation-div{
+    width: 60%;
+    float: right;
+    min-height: 40px;
+    line-height: 40px;
+    background-color: lightgray;
+    text-align: center;
+
+}
+
+#header-banner{
+    width: 100%;
+    background-color: lightgray;
+    min-height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#intro-text{
+    width: 100%;
+    background-color: lightgray;
+    min-height: 80px;
+    line-height: 80px;
+    text-align: center; 
+    margin-bottom: 10px; 
+}
+
+#main-box{
+    width: 100%;
+    min-height: 280px;
+    margin-bottom: 10px;
+
+}
+
+.clearfix2::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+#main-box .box{
+    width: 30%;
+    background-color: lightgray;
+    min-height: 280px;
+    line-height: 280px;
+    text-align: center;
+    float: left;
+}
+
+#main-box .box:nth-child(2){  /* adds spaces between the boxes*/ /*box 2 is the second child*/
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#footer{
+    width: 100%;
+    min-height: 30px;
+    line-height: 30px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+#main{
+    width: 80%;
+    margin: auto;
+}

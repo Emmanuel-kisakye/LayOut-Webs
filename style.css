@@ -36,7 +36,14 @@
 
 #main-div{
     width: 100%;
-    background-color: gray; /*min-height was removed because elements inside are floated i.e theres no contents inside*/
+  /*min-height was removed because elements inside are floated i.e theres no contents inside*/
+  margin-bottom: 10px;
+}
+
+.clearfix::after {    /*belongs to main-div after the content inside, dont consider float */
+     content:" ";
+     display: block;
+     clear: both;
 }
 
 
@@ -57,4 +64,17 @@
     background-color: lightgray;
     float: right; /* child div from main to go on right */
     text-align: center;
+}
+
+#footer-div{
+    width: 100%;
+    min-height: 60px;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 60px;
+}
+
+#wrapper-div{
+    width: 80%;
+    margin: auto;
 }
