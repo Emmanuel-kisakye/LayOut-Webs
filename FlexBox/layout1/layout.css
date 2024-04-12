@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#wrapper-div{
+    display: flex;
+    flex-direction: column; /*any elements added in this fiv will be in a column aka on top of each other */
+    width: 80%;
+    min-height: 100px;
+    margin: auto;
+}
+
+#logo-div{
+    display: flex;
+    flex-direction: row; /*any elements added in this fiv will be in a column aka next to each other */
+    width: 100%;
+    min-height: 50px;
+    background-color: lightgray;
+    align-items: center;
+    padding-left: 2%;
+    margin-bottom: 10px;
+}
+
+#nav-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: lightgray;
+    min-height: 30px;
+    line-height: 30px;
+   justify-content: center;
+}
+
+#header-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100px;
+    background-color: lightgray;
+    margin-top: 10px;
+    line-height: 100px;
+    justify-content: center;
+}
+
+#main-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 300px;  
+    margin-top: 10px;
+    justify-content: space-between; /* space between divs in row*/
+}
+
+#sidebar{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 25%; /* width*/
+    background-color: lightgray;
+    justify-content: center; /* items in center*/
+    align-items: center; /* items in center*/
+}
+
+#body-area{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 70%; /* width*/
+    background-color: lightgray;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: lightgray;
+    margin-top: 10px;
+    min-height: 60px;
+    align-items: center;
+    justify-content: center;
+}
